@@ -4,7 +4,7 @@ function TrafficLight() {
     const [color, setColor] = useState('red');
     const [purple, setPurple] = useState(false);
     let next;
-    
+
     if (!purple) {
         next = color === "red" ? "green" : color === "orange" ? "red" : "orange";
     } else {
@@ -21,20 +21,20 @@ function TrafficLight() {
             <div className="traffic-stick"></div>
             <div className="traffic-body">
                 <div 
-                    className={"traffic-light red-off " + (color === "red" && "red-on")} 
+                    className={"traffic-light red-off " + (color === "red" ? "red-on" : "")} 
                     onClick={() => setColor("red")}>
                 </div>
                 <div 
-                    className={"traffic-light orange-off " + (color === "orange" && "orange-on")} 
+                    className={"traffic-light orange-off " + (color === "orange" ? "orange-on" : "")} 
                     onClick={() => setColor("orange")}>
                 </div>
                 <div 
-                    className={"traffic-light green-off " + (color === "green" && "green-on")} 
+                    className={"traffic-light green-off " + (color === "green" ? "green-on" : "")} 
                     onClick={() => setColor("green")}>
                 </div>
                 { purple && 
                 <div 
-                    className={"traffic-light purple-off " + (color === "purple" && "purple-on")} 
+                    className={"traffic-light purple-off " + (color === "purple" ? "purple-on" : "")} 
                     onClick={() => setColor("purple")}>
                 </div> }
             </div>
