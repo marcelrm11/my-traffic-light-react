@@ -7,17 +7,18 @@
 }
 .traffic-body {
     width: 100px;
-    height: 300px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     gap: 5px;
     border-radius: 5px;
+    padding: 0.5em 0;
 }
 .traffic-light {
     width: 90px;
-    height: 90px;
+    min-height: 90px;
     border-radius: 50%;
 }
 .red-off {

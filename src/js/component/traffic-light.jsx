@@ -2,8 +2,19 @@ import React, { useState } from "react";
 
 function TrafficLight() {
     const [color, setColor] = useState('red');
-    let next = color === "red" ? "green" : color === "orange" ? "red" : "orange";
     const [purple, setPurple] = useState(false);
+    let next;
+    
+    if (!purple) {
+        next = color === "red" ? "green" : color === "orange" ? "red" : "orange";
+    } else {
+        next = color === "red" ? "purple" : color === "orange" ? "red" : color === "purple" ? "green" : "orange";
+    }
+
+    function handleToggle() {
+        setPurple(!purple);
+        setColor(!purple ? "purple" : "red");
+    }
 
     return (
         <div className="d-flex flex-column align-items-center">
@@ -28,7 +39,7 @@ function TrafficLight() {
                 </div> }
             </div>
             <button className="button-17 mt-4" role="button" onClick={() => setColor(next)}>SWITCH</button>
-            <button className="button-17 mt-4" role="button" onClick={() => setPurple(!purple)}>Toggle Purple</button>
+            <button className="button-17 mt-4" role="button" onClick={() => handleToggle()}>Toggle Purple</button>
         </div>
     )
 }
