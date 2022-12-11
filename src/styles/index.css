@@ -1,53 +1,54 @@
-.traffic-stick, .traffic-body {
-    background-color: black;
+.traffic-stick,
+.traffic-body {
+  background-color: black;
 }
 .traffic-stick {
-    width: 20px;
-    height: 100px;
+  width: 20px;
+  height: 100px;
 }
 .traffic-body {
-    width: 100px;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 5px;
-    border-radius: 5px;
-    padding: 0.5em 0;
+  width: 100px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  padding: 0.5em 0;
 }
 .traffic-light {
-    width: 90px;
-    min-height: 90px;
-    border-radius: 50%;
+  width: 90px;
+  min-height: 90px;
+  border-radius: 50%;
 }
 .red-off {
-    background-color: rgb(105, 0, 0);
+  background-color: rgb(105, 0, 0);
 }
 .red-on {
-    background-color: red;
-    box-shadow: 0 0 60px 30px rgb(255, 0, 0);
+  background-color: red;
+  box-shadow: 0px 0px 60px 30px rgb(255, 0, 0);
 }
 .orange-off {
-    background-color: rgb(143, 93, 0);
+  background-color: rgb(143, 93, 0);
 }
 .orange-on {
-    background-color: rgb(255, 176, 30);
-    box-shadow: 0 0 60px 30px rgb(255, 176, 30);
+  background-color: rgb(255, 176, 30);
+  box-shadow: 0 0 60px 30px rgb(255, 176, 30);
 }
 .green-off {
-    background-color: rgb(0, 85, 0);
+  background-color: rgb(0, 85, 0);
 }
 .green-on {
-    background-color: greenyellow;
-    box-shadow: 0 0 60px 30px rgb(173, 255, 47);
+  background-color: greenyellow;
+  box-shadow: 0 0 60px 30px rgb(173, 255, 47);
 }
 .purple-off {
-    background-color: rgb(128, 0, 128);
+  background-color: rgb(128, 0, 128);
 }
 .purple-on {
-    background-color: rgb(255, 0, 255);
-    box-shadow: 0 0 60px 30px rgb(255, 0, 255);
+  background-color: rgb(255, 0, 255);
+  box-shadow: 0 0 60px 30px rgb(255, 0, 255);
 }
 
 .button-17 {
@@ -56,18 +57,19 @@
   background-color: #fff;
   border-radius: 24px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   box-sizing: border-box;
   color: #3c4043;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 48px;
   justify-content: center;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
   line-height: normal;
   max-width: 100%;
   overflow: visible;
@@ -75,22 +77,24 @@
   position: relative;
   text-align: center;
   text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   width: auto;
-  will-change: transform,opacity;
+  will-change: transform, opacity;
   z-index: 0;
 }
 
 .button-17:hover {
-  background: #F6F9FE;
+  background: #f6f9fe;
   color: #174ea6;
 }
 
 .button-17:active {
-  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
 }
 
@@ -100,21 +104,26 @@
 }
 
 .button-17:not(:disabled) {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
 .button-17:not(:disabled):hover {
-  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
 }
 
 .button-17:not(:disabled):focus {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
 .button-17:not(:disabled):active {
-  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
+    rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
 }
 
 .button-17:disabled {
-  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
