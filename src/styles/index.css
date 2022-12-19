@@ -50,6 +50,13 @@
   background-color: rgb(255, 0, 255);
   box-shadow: 0 0 60px 30px rgb(255, 0, 255);
 }
+.red-on,
+.orange-on,
+.green-on,
+.purple-on {
+  position: relative;
+  z-index: 2;
+}
 
 .button-17 {
   align-items: center;
