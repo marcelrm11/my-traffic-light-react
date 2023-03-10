@@ -2,5 +2,5 @@
 
 ## Project description
 
-> This is a Javascript exercise to practice events and DOM manipulation.
+> This is a Javascript-React exercise to practice events and state management.
 
